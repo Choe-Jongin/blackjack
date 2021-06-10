@@ -19,11 +19,11 @@ def blackjack():
     username, tries, wins, chips, members = login(load_members())
     play = 0
     win = 0
-    bet = 0
     deck = fresh_deck()
     while True:
         print("----------")
         #베팅금액 입력
+        bet = 0
         while bet <= 0 :
             try:
                 bet = int(input("How much do you want to bet : "))
